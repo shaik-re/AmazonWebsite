@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="sign.css" />
+  </head>
+  <body>
+    <!-- Logo linking to the homepage -->
+    <a href="index.html" aria-label="Go to Homepage">
+      <img class="logo" src="amazon.png" alt="Amazon Logo" width="100" />
+    </a>
+
+    <!-- Sign-Up Container with form element -->
+    <main class="signin-container">
+      <h1 class="signin-title">Sign Up</h1>
+
+      <!-- Sign-Up Form -->
+      <form action="submit-url" method="POST">
+        <!-- Name Input -->
+        <label class="input-label" for="name">Your Name</label>
+        <input
+          id="name"
+          name="name"
+          type="text"
+          placeholder="First and Last Name"
+          required
+        />
+
+        <!-- Mobile/Email Input -->
+        <label class="input-label" for="contact">Mobile Number or Email</label>
+        <input
+          id="contact"
+          name="contact"
+          type="text"
+          placeholder="Enter your mobile number or email"
+          required
+        />
+
+        <!-- Password Input -->
+        <label class="input-label" for="password">Password</label>
+        <input
+          id="password"
+          name="password"
+          type="password"
+          placeholder="At least 6 characters"
+          minlength="6"
+          required
+        />
+
+        <!-- Continue Button -->
+        <button type="submit">Continue</button>
+      </form>
+
+      <!-- Terms and Help -->
+      <p class="sign-condition">
+        By continuing, you agree to Amazon's
+        <a href="#">Condition of Use</a> and <a href="#">Privacy Notice</a>.
+      </p>
+      <p class="sign-help">&#9656; <a href="#">Need help?</a></p>
+      <hr />
+
+      <!-- Business Buying -->
+      <h4>Buying for work?</h4>
+      <p class="sign-business">
+        <a href="#">Shop on Amazon Business</a>
+      </p>
+    </main>
+
+    <!-- Bottom Section -->
+    <div class="sign-bottom">
+      <hr />
+      <p>Have an account?</p>
+      <hr />
+    </div>
+    <a href="sign.html" class="sign-signup-btn">Login with Amazon Account</a>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-link">
+        <a href="#">Conditions of Use</a>
+        <a href="#">Privacy Notice</a>
+        <a href="#">Help</a>
+      </div>
+      <p class="footer-copyright">
+        &copy; 1996-2024, Amazon.com, Inc. or its affiliates
+      </p>
+    </footer>
+  </body>
+</html>
